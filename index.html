@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Background Image */
+        body::before {
+            content: '';
+            background-image: url("images/bg-image.jpg"); /* Changed from asset() */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- Header -->
+    <header class="shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-4">
+            <img src="images/logo.png" alt="Company Logo" class="h-12 w-auto"> <!-- Changed from asset() -->
+        </div>
+    </header>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-[#81DB00] md:hidden z-50">
+        <a href="https://apps.apple.com/us/app/utic/id1580191165" 
+           class="block text-white text-center py-4 font-bold text-lg">
+            REGISTER NOW
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="relative">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center">
+            <div class="max-w-4xl mx-auto px-4 py-12 text-center">
+                <h1 class="text-4xl font-bold text-white mb-4">
+                    Seamless Service at Your Fingertips
+                </h1>
+                <p class="text-xl text-white mb-8">
+                    Register now and start using our mobile app today!
+                </p>
+
+                <!-- QR Code Section -->
+                <div class="mb-8 p-6 bg-gray-100 rounded-lg shadow-md inline-block">
+                    <img src="images/qr-code.png" alt="QR Code" class="mx-auto w-48 h-48 mb-4"> <!-- Changed from asset() -->
+                    <a href="https://apps.apple.com/us/app/utic/id1580191165" 
+                       class="bg-[#81DB00] text-white px-8 py-3 rounded-lg font-medium block hover:bg-[#6db800] transition">
+                        Scan to Register
+                    </a>
+                </div>
+
+                <!-- Business Overview -->
+                <p class="text-white max-w-xl mx-auto mb-8 text-lg">
+                    Need it done? Download our app and book your service today! 
+                    Sign up now to enjoy instant access and exclusive benefits.
+                </p>
+
+                <!-- Desktop CTA & App Stores -->
+                <div class="space-y-6">                  
+                    <div class="flex justify-center gap-4">
+                        <a href="https://apps.apple.com/us/app/utic/id1580191165">
+                            <img src="images/app-store.png" alt="App Store" class="h-12"> <!-- Changed from asset() -->
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.freelancer.android.messenger">
+                            <img src="images/google-play.webp" alt="Google Play" class="h-12"> <!-- Changed from asset() -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-white text-center mb-12">How It Works</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-sm">
+                        <div class="text-2xl font-bold text-[#81DB00] mb-2">1</div>
+                        <h3 class="text-lg font-medium mb-2">Scan QR Code</h3>
+                        <p class="text-gray-700">Use your phone's camera to scan</p>
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-sm">
+                        <div class="text-2xl font-bold text-[#81DB00] mb-2">2</div>
+                        <h3 class="text-lg font-medium mb-2">Register & Download</h3>
+                        <p class="text-gray-700">Create account and install app</p>
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-sm">
+                        <div class="text-2xl font-bold text-[#81DB00] mb-2">3</div>
+                        <h3 class="text-lg font-medium mb-2">Enjoy Service</h3>
+                        <p class="text-gray-700">Start using immediately</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <div class="mb-4">
+                    <a href="mailto:info@utic.com.au" class="text-white hover:text-[#81DB00] transition">
+                        info@utic.com.au
+                    </a>
+                </div>
+                <div class="flex justify-center gap-6 mb-4">
+                    <a href="#" class="text-white hover:text-[#81DB00] transition">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#81DB00] transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#81DB00] transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-sm text-white mb-9">
+                    © 2025 UTIC. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
